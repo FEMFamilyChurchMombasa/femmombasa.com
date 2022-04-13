@@ -1,13 +1,17 @@
 <template>
+<Navbar></Navbar>
+
 <RouterView></RouterView>
 </template>
 
 <script>
 import { RouterView } from "vue-router";
+import Navbar from "./components/layout/Navbar.vue";
 
 export default {
     components: {
-        RouterView
+        RouterView,
+        Navbar,
     }
 }
 </script>
@@ -17,6 +21,16 @@ export default {
 
 body, html {
     font-family: config.$font-family;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: config.color('dark-1');
+}
+
+.container {
+    width: calc(100% - 2rem);
+    max-width: 1300px;
+    margin: auto;
 }
 
 </style>

@@ -1,4 +1,4 @@
-$steps: 1, 2, 3, 4, 5;
+$steps: 1, 2, 3, 4, 5, auto;
 $directions: top, bottom, left, right;
 
 @each $step in $steps {
