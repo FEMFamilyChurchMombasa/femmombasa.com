@@ -1,0 +1,35 @@
+@use "sass:map";
+
+$colors: (
+    "dark-blue": #2e20cb,
+    "magenta": #9f20c9,
+    "pink": #cb2084,
+    "dark-magenta": #8320c9,
+    "brown": #ad4525,
+    "lavender": #7b61ff,
+    "blue": #006aff,
+    "green": #25d366,
+    "dark-1": #1a1a1a,
+    "dark-2": #666666,
+    "dark-3": #707070,
+    "dark-4": #999999,
+    "light-1": #f7f7f7,
+    "light-2": #f2f2f2,
+    "light-3": #e5e5e5,
+    "light-4": #c4c4c4
+);
+
+@function color($color-name) {
+    @return map.get($colors, $color-name);
+}
+
+// Backgrounds, text
+@each $color-name, $hex in $colors {
+    .bg-#{$color-name} {
+        background-color: $hex;
+    }
+
+    .text-#{$color_name} {
+        color: $hex;
+    }
+}

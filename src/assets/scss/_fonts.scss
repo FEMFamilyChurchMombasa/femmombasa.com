@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+$font-family: "Work Sans", sans-serif;
+$font-size: 16px;
+
+// Display fonts
+$display-font-sizes: (
+    1: 3rem,
+    2: 2.5rem,
+    3: 1.5rem,
+    4: 1.125rem,
+);
+
+@each $level, $size in $display-font-sizes {
+    .display-#{$level}{
+        font-size: $size;
+        line-height: normal;
+
+        @if $level < 3 {
+            font-weight: 700;
+        } @else if $level == 4 {
+            font-weight: 500;
+            line-height: 1.75rem;
+        }
+    }
+}
+
+// Headings
+$heading-font-sizes: (
+    1: 2rem,
+    2: 1.25rem,
+    3: 1rem,
+);
+
+@each $level, $size in $heading-font-sizes {
+    .heading-#{$level} {
+        font-size: $size;
+    }
+}
+
+p, .paragraph {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.body {
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
+.small, small {
+    font-size: 0.875rem;
+    line-height: normal;
+}

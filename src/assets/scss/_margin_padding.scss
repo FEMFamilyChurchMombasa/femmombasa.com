@@ -1,0 +1,22 @@
+$steps: 1, 2, 3, 4, 5;
+$directions: top, bottom, left, right;
+
+@each $step in $steps {
+    $val: calc(0.5rem + (0.5rem * $step));
+
+    @each $direction in $directions {
+        .margin-#{$direction}-#{$step} {
+            margin-#{$direction}: $val;
+        }
+        .padding-#{$direction}-#{$step} {
+            padding-#{$direction}: $val;
+        }
+    }    
+
+    .margin-#{$step} {
+        margin: $val;
+    }
+    .padding-#{$step}{
+        padding: $val;
+    }
+}

@@ -13,4 +13,10 @@ export default {
 </script>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+
+body, html {
+    font-family: config.$font-family;
+}
+
+</style>
