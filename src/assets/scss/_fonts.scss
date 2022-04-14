@@ -32,13 +32,13 @@ $mobile-display-font-sizes: (
     }
 }
 
-@media screen and (max-width: breakpoints.get-breakpoint('md')) {
+@media screen and (max-width: breakpoints.get-breakpoint('sm')) {
     @each $level, $size in $mobile-display-font-sizes {
         @include display-sizes($level, $size);
     }
 }
 
-@include breakpoints.breakpoint("md") {
+@include breakpoints.breakpoint("sm") {
     @each $level, $size in $desktop-display-font-sizes {
         @include display-sizes($level, $size);
     }
@@ -76,7 +76,7 @@ $mobile-heading-font-sizes: (
     }
 }
 
-@include breakpoints.breakpoint("md") {
+@include breakpoints.breakpoint("sm") {
     @each $level, $size in $desktop-heading-font-sizes {
         @include heading-sizes($level, $size);
     }

@@ -6,22 +6,3 @@
 @forward "./buttons";
 @forward "./breakpoints";
 @use "sass:map";
-
-body,
-html {
-    font-size: 16px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: colors.color("dark-1");
-
-    * {
-        font-family: fonts.$font-family;
-    }
-}
-
-.container {
-    width: calc(100% - 2rem);
-    max-width: 1300px;
-    margin: auto;
-}

@@ -12,14 +12,14 @@ div#image {
     top: 0;
     right: 0;
     z-index: -1;
-    background: url("../../../assets/church_members.webp");
     min-height: 100%;
+    background: url("../../../assets/church_members.webp");
     background-size: cover;
-    background-position: 15% center;
+    background-position: center 15%;
     border-radius: 1rem;
     width: 100%;
 
-    @include config.breakpoint("lg") {
+    @include config.breakpoint('lg'){
         width: calc((100% / 3) * 2);
     }
 }

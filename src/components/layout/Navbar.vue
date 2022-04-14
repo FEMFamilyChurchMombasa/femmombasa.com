@@ -1,5 +1,5 @@
 <template>
-    <header class="container margin">
+    <header class="container">
         <img src="../../assets/fem-msa-logo.svg" alt="logo" />
         <nav>
             <router-link class="nav-link body" to="">Chat</router-link>
@@ -24,7 +24,11 @@ header {
     justify-content: space-between;
 
     img[alt="logo"] {
-        height: 6rem;
+        height: 5rem;
+
+        @include config.breakpoint('sm'){
+            height: 6rem;
+        }
     }
 
     nav {
