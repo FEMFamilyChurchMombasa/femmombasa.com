@@ -9,6 +9,7 @@ $colors: (
     "lavender": #7b61ff,
     "blue": #006aff,
     "green": #25d366,
+    "black": black,
     "dark-1": #1a1a1a,
     "dark-2": #666666,
     "dark-3": #707070,
@@ -16,12 +17,13 @@ $colors: (
     "light-1": #f7f7f7,
     "light-2": #f2f2f2,
     "light-3": #e5e5e5,
-    "light-4": #c4c4c4
+    "light-4": #c4c4c4,
+    "white": white
 );
 
 @function color($color-name) {
     @return map.get($colors, $color-name);
-}
+};
 
 // Backgrounds, text
 @each $color-name, $hex in $colors {
