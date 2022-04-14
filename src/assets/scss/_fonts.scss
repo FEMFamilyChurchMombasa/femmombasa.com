@@ -24,6 +24,7 @@ $display-font-sizes: (
     .display-#{$level}{
         font-size: $size;
         line-height: normal;
+        margin: 0;
 
         @if $level < 3 {
             font-weight: 700;

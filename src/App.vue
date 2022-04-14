@@ -1,7 +1,7 @@
 <template>
-<navbar></navbar>
+    <navbar></navbar>
 
-<router-view></router-view>
+    <router-view></router-view>
 </template>
 
 <script>
@@ -11,20 +11,21 @@ import Navbar from "./components/layout/Navbar.vue";
 export default {
     components: {
         RouterView,
-        Navbar,
+        Navbar
     }
-}
+};
 </script>
 
-
 <style lang="scss">
-
-body, html {
-    font-family: config.$font-family;
+body,
+html {
+    * {
+        font-family: config.$font-family;
+    }
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: config.color('dark-1');
+    color: config.color("dark-1");
 }
 
 .container {
@@ -32,5 +33,4 @@ body, html {
     max-width: 1300px;
     margin: auto;
 }
-
 </style>

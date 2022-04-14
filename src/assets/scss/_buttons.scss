@@ -8,9 +8,11 @@
         padding: 1rem 2rem;
         display: flex;
         gap: 0.5rem;
+        background-color: $hex;
+        border-radius: 1rem;
 
         color: fonts.bg-font-color($hex);
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;
     }

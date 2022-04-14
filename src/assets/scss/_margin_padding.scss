@@ -1,8 +1,20 @@
-$steps: 1, 2, 3, 4, 5, auto;
+$steps: (0, 1, 2, 3, 4, 5, auto);
+
 $directions: top, bottom, left, right;
 
 @each $step in $steps {
-    $val: calc(0.5rem + (0.5rem * $step));
+    $val: #{$step}rem;
+
+    @if $step == auto {
+        $val: auto;
+    }
+
+    .margin-#{$step} {
+        margin: $val;
+    }
+    .padding-#{$step} {
+        padding: $val;
+    }
 
     @each $direction in $directions {
         .margin-#{$direction}-#{$step} {
@@ -10,13 +22,7 @@ $directions: top, bottom, left, right;
         }
         .padding-#{$direction}-#{$step} {
             padding-#{$direction}: $val;
+            @debug $val
         }
-    }    
-
-    .margin-#{$step} {
-        margin: $val;
-    }
-    .padding-#{$step}{
-        padding: $val;
     }
 }
