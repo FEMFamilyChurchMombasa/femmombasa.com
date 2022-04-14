@@ -31,6 +31,10 @@ header {
         display: flex;
         gap: 3rem;
         .nav-link {
+            @include config.breakpoint('xs'){
+                display: none;
+            }
+
             display: block;
             font-size: 1rem;
             font-weight: 500;

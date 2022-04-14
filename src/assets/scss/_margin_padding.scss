@@ -22,7 +22,6 @@ $directions: top, bottom, left, right;
         }
         .padding-#{$direction}-#{$step} {
             padding-#{$direction}: $val;
-            @debug $val
         }
     }
 }

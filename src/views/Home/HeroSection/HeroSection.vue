@@ -1,6 +1,6 @@
 <template>
 
-<section class="container">
+<section class="container padding-top-5 padding-bottom-5">
     <heading-vue></heading-vue>
     <image-vue></image-vue>
 </section>
@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    display: flex;
+    position: relative;
+    // min-height: 600px;
 }
 </style>

@@ -21,8 +21,8 @@ $colors: (
     "white": white
 );
 
-@function color($color-name) {
-    @return map.get($colors, $color-name);
+@function color($color-name, $alpha:1.0) {
+    @return rgba(map.get($colors, $color-name), $alpha);
 };
 
 // Backgrounds, text
