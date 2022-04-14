@@ -1,5 +1,4 @@
 @use "./colors";
-@use "./fonts";
 
 @each $color-name, $hex in colors.$colors {
     .btn-#{$color-name} {
@@ -12,7 +11,7 @@
         background-color: $hex;
         border-radius: 1rem;
 
-        color: fonts.bg-font-color($hex);
+        color: colors.bg-font-color($hex);
         font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;

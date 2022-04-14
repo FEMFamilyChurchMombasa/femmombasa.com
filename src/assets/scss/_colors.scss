@@ -25,6 +25,14 @@ $colors: (
     @return rgba(map.get($colors, $color-name), $alpha);
 };
 
+@function bg-font-color($bg-color){
+    @if lightness($bg-color) < 55 {
+        @return white;
+    } @else {
+        @return color('dark-1');
+    }
+};
+
 // Backgrounds, text
 @each $color-name, $hex in $colors {
     .bg-#{$color-name} {

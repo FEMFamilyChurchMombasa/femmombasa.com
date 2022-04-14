@@ -1,6 +1,5 @@
 <template>
-    <div class="margin-left-auto" id="image">
-    </div>
+    <div class="margin-left-auto" id="image"></div>
 </template>
 
 <script>
@@ -14,10 +13,14 @@ div#image {
     right: 0;
     z-index: -1;
     background: url("../../../assets/church_members.webp");
-    width: calc((100% / 3) * 2);
     min-height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: 15% center;
     border-radius: 1rem;
+    width: 100%;
+
+    @include config.breakpoint("lg") {
+        width: calc((100% / 3) * 2);
+    }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 
-<section class="container padding-top-5 padding-bottom-5">
+<section class="container">
     <heading-vue></heading-vue>
     <image-vue></image-vue>
 </section>
@@ -23,6 +23,13 @@ export default {
 <style lang="scss" scoped>
 section {
     position: relative;
-    // min-height: 600px;
+    
+    @include config.breakpoint('lg'){
+        padding: 2rem 0;
+    }
+
+    @include config.breakpoint('xl'){
+        padding: 5rem 0;
+    }
 }
 </style>

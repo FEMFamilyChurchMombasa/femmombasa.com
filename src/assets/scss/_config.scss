@@ -1,28 +1,27 @@
 @forward "./fonts";
+@use "./fonts";
 @forward "./colors";
+@use "./colors";
 @forward "./margin_padding";
-@forward  "./buttons";
+@forward "./buttons";
+@forward "./breakpoints";
 @use "sass:map";
 
-$breakpoints: (
-    "sm": 600px,
-    "md": 768px,
-    "lg": 1024px,
-    "xl": 1440px
-);
+body,
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: colors.color("dark-1");
 
-@function get-breakpoint($breakpoint) {
-    @return map.get($breakpoints, $breakpoint);
+    * {
+        font-family: fonts.$font-family;
+    }
 }
 
-@mixin breakpoint($breakpoint) {
-    @if $breakpoint == "xs" {
-        @media screen and (max-width: get-breakpoint("sm")) {
-            @content;
-        }
-    } @else {
-        @media screen and (min-width: get-breakpoint($breakpoint)) {
-            @content;
-        }
-    }
+.container {
+    width: calc(100% - 2rem);
+    max-width: 1300px;
+    margin: auto;
 }
