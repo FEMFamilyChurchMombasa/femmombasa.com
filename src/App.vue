@@ -1,12 +1,13 @@
 <template>
     <navbar></navbar>
-
-    <router-view></router-view>
+    <main>
+        <router-view></router-view>
+    </main>
 </template>
 
 <script>
 import { RouterView } from "vue-router";
-import Navbar from "./components/layout/Navbar.vue";
+import Navbar from "./components/layout/Navbar/Navbar.vue";
 
 export default {
     components: {
@@ -45,5 +46,4 @@ a {
         color: darken(config.color("magenta"), 10%);
     }
 }
-
 </style>
