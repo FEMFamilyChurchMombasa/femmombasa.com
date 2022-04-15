@@ -35,4 +35,15 @@ html {
     max-width: 1300px;
     margin: auto;
 }
+
+a {
+    text-decoration: none;
+    color: config.color("magenta");
+    cursor: pointer;
+
+    &:hover {
+        color: darken(config.color("magenta"), 10%);
+    }
+}
+
 </style>

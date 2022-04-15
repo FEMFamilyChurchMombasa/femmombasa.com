@@ -23,6 +23,11 @@ export default {
 <style lang="scss" scoped>
 section {
     position: relative;
+    margin-bottom: 2rem;
+
+    @include config.breakpoint('sm'){
+        margin-bottom: 3rem;
+    }
     
     @include config.breakpoint('lg'){
         padding: 2rem 0;
