@@ -90,17 +90,18 @@ p {
         font-size: 1.125rem;
         line-height: 1.575rem;
         
-        @include breakpoints.breakpoint('sm'){
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-        }
+        // @include breakpoints.breakpoint('sm'){
+        //     font-size: 1rem;
+        //     // line-height: 1.75rem;
+        //     line-height: 1.375rem;
+        // }
     }
 }
 
-.body {
-    font-size: 1rem;
-    line-height: 1.375rem;
-}
+// .body {
+//     font-size: 1rem;
+//     line-height: 1.375rem;
+// }
 
 .small,
 small {

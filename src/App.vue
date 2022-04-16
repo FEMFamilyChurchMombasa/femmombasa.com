@@ -35,6 +35,10 @@ html {
     width: calc(100% - 2rem);
     max-width: 1300px;
     margin: auto;
+
+    @include config.breakpoint('sm'){
+        width: calc(100% - 3rem);
+    }
 }
 
 a {
