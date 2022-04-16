@@ -4,6 +4,6 @@
 
 <style lang="scss" scoped>
 img[alt="logo"] {
-    height: 6rem;
+    height: 5rem;
 }
 </style>
