@@ -1,27 +1,24 @@
 <template>
-    <header class="container">
+    <div class="container">
         <div>
             <logo-vue></logo-vue>
-            <button @click="isOpen = !isOpen" class="btn-light-3">
-                <icon icon="eva:menu-fill" height="32" />
+            <button @click="isOpen = !isOpen" class="btn-dark-magenta">
+                <icon icon="icon-park-outline:menu-fold" height="24" />
             </button>
         </div>
-        <Transition>
-            <links-vue @closeMenu="isOpen = false" v-if="isOpen"></links-vue>
-        </Transition>
-    </header>
+        <aside-vue :isOpen = "isOpen" @closeMenu="isOpen = false"></aside-vue>
+    </div>
 </template>
 
 <script>
 import LogoVue from "./Logo.vue";
-import LinksVue from "./Links.vue";
+import AsideVue from "./Aside.vue";
 import { Icon } from "@iconify/vue";
 
 export default {
-    name: "Navbar",
     components: {
         LogoVue,
-        LinksVue,
+        AsideVue,
         Icon
     },
     data() {
@@ -33,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
+div.container {
     div {
         margin: 1rem auto;
         display: flex;
@@ -42,19 +39,10 @@ header {
         z-index: 10;
 
         button {
-            padding: 1rem !important;
-            border-radius: 1rem !important;
+            width: fit-content;
+            padding: 0.5rem !important;
+            border-radius: 0.5rem !important;
         }
     }
-}
-
-.v-enter-active,
-.v-leave-active {
-    transition: 400ms ease;
-}
-.v-enter-from,
-.v-leave-to {
-    transform: translateX(100%);
-    // opacity: 0;
 }
 </style>

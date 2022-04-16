@@ -1,15 +1,22 @@
 @use "./colors";
+@use "./breakpoints";
 
 @each $color-name, $hex in colors.$colors {
     .btn-#{$color-name} {
         border: none;
         outline: none;
-        padding: 1rem 2rem;
+        padding: 1rem;
+        width: 100%;
+
+        @include breakpoints.breakpoint('sm'){
+            width: fit-content;
+            padding: 1rem 2rem;
+        }
 
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
         background-color: $hex;
         border-radius: 1rem;
 
