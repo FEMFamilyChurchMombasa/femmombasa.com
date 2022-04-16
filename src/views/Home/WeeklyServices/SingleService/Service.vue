@@ -5,7 +5,7 @@
                 <slot name="button"></slot>
             </template>
         </details-vue>
-        <image-vue :imageSrc="imageSrc" :serviceRef="serviceTimes">
+        <image-vue>
             <template #image>
                 <slot name="image"></slot>
             </template>
@@ -24,7 +24,7 @@ export default {
         ImageVue
     },
     inject: ['mq'],
-    props: ["ref", "serviceName", "serviceTimes", "description", "imageSrc"],
+    props: ["ref", "serviceName", "serviceTimes", "description"],
 };
 </script>
 
