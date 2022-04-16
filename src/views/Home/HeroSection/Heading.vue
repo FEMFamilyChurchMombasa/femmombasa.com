@@ -25,10 +25,10 @@ export default {
 <style lang="scss" scoped>
 div#heading {
     border-radius: 1rem;
-    padding: 3rem 2rem;
+    padding: 6rem 2rem;
     margin-bottom: 1rem;
     color: white;
-    background-color: config.color("dark-1", 0.7);
+    background-color: config.color("dark-1", 0.5);
 
     @include config.breakpoint('sm'){
         padding: 3rem;
@@ -64,8 +64,8 @@ div#heading {
         background-color: config.color('light-2', 0.75);
     }
 
-    button {
-        width: 100%;
-    }
+    // button {
+    //     width: 100%;
+    // }
 }
 </style>

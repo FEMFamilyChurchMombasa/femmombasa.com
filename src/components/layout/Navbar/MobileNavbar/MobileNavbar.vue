@@ -16,7 +16,6 @@ import AsideVue from "./Aside.vue";
 import { Icon } from "@iconify/vue";
 
 export default {
-    name: "Navbar",
     components: {
         LogoVue,
         AsideVue,
@@ -40,6 +39,7 @@ div.container {
         z-index: 10;
 
         button {
+            width: fit-content;
             padding: 0.5rem !important;
             border-radius: 0.5rem !important;
         }

@@ -43,6 +43,8 @@ export default {
 
 <style lang="scss" scoped>
 section {
+    margin-bottom: 3rem;
+    
     h2 {
         display: flex;
         align-items: center;

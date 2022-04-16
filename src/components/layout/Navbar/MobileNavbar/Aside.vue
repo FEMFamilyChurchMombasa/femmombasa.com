@@ -52,6 +52,7 @@ aside {
     box-shadow: 0 0 30px config.color("dark-1", 0.25);
 
     button {
+        // width: fit-content !important;
         padding: 0.5rem !important;
         margin-bottom: 2rem;
         border-radius: 0.5rem !important;

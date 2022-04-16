@@ -1,8 +1,8 @@
 <template>
-    <header class="container">
+    <div class="container">
         <logo-vue></logo-vue>
         <links-vue></links-vue>
-    </header>
+    </div>
 </template>
 
 <script>
@@ -10,7 +10,6 @@ import LogoVue from "./Logo.vue";
 import LinksVue from "./Links.vue";
 
 export default {
-    name: "Navbar",
     components: {
         LogoVue,
         LinksVue
@@ -19,7 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
+div {
     margin: 1rem auto;
     display: flex;
     align-items: center;

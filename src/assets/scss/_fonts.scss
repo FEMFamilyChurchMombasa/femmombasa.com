@@ -88,6 +88,8 @@ p {
     &,
     .paragraph {
         font-size: 1.125rem;
+        line-height: 1.575rem;
+        
         @include breakpoints.breakpoint('sm'){
             font-size: 1.25rem;
             line-height: 1.75rem;
