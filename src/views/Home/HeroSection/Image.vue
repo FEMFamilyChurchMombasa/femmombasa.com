@@ -1,5 +1,12 @@
 <template>
-    <div class="margin-left-auto" id="image"></div>
+    <div class="margin-left-auto" id="image">
+        <slot name="image">
+            <img
+                src="../../../assets/church_members.webp"
+                alt="church members"
+            />
+        </slot>
+    </div>
 </template>
 
 <script>
@@ -11,15 +18,21 @@ div#image {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     z-index: -1;
-    min-height: 100%;
-    background: url("../../../assets/church_members.webp");
     background-size: cover;
     background-position: center 15%;
     border-radius: 1rem;
     width: 100%;
+    overflow: hidden;
 
-    @include config.breakpoint('lg'){
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    @include config.breakpoint("lg") {
         width: calc((100% / 3) * 2);
     }
 }

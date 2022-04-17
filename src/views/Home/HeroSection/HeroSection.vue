@@ -1,8 +1,16 @@
 <template>
 
 <section class="container">
-    <heading-vue></heading-vue>
-    <image-vue></image-vue>
+    <heading-vue>
+        <template #heading>
+            <slot name="heading"></slot>
+        </template>
+    </heading-vue>
+    <image-vue>
+        <template #image>
+            <slot name="image"></slot>
+        </template>
+    </image-vue>
 </section>
 
 </template>

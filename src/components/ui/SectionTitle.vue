@@ -25,8 +25,9 @@ header {
 
     h2 {
         font-size: inherit;
-
         margin: 0;
+        // width: fit-content;
+        flex: 1;
     }
 }
 </style>
