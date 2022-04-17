@@ -1,18 +1,22 @@
 <template>
-    <navbar></navbar>
+    <navbar-vue></navbar-vue>
     <main>
         <router-view></router-view>
     </main>
+    <footer-vue></footer-vue>
+
 </template>
 
 <script>
 import { RouterView } from "vue-router";
-import Navbar from "./components/layout/Navbar/Navbar.vue";
+import FooterVue from "./components/layout/Footer/Footer.vue";
+import NavbarVue from "./components/layout/Navbar/Navbar.vue";
 
 export default {
     components: {
         RouterView,
-        Navbar
+        NavbarVue,
+        FooterVue,
     }
 };
 </script>
@@ -53,5 +57,6 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
+    margin: 0;
 }
 </style>
