@@ -1,5 +1,5 @@
 <template>
-    <article class="container">
+    <article id="mpesaSection" class="container">
         <section-title-vue title="How to Give Using M-Pesa" icon="eva:info-outline"></section-title-vue>
 
         <div class="mpesa-steps">

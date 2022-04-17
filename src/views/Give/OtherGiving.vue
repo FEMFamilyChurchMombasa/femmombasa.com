@@ -14,15 +14,11 @@
                 Thank you for your generosity.
             </p>
             <div class="links">
-                <router-link class="navlink" to="">
+                <router-link class="navlink" :to="{ path:'/', hash:'#locationSection' }">
                     <span>Find out where we are</span>
                     <icon icon="akar-icons:arrow-right" />
                 </router-link>
-                <router-link class="navlink" to="">
-                    <span>Send us a message</span>
-                    <icon icon="akar-icons:arrow-right" />
-                </router-link>
-                <router-link class="navlink" to="">
+                <router-link class="navlink" :to="{ path:'/', hash:'#faqsSection' }">
                     <span>Frequently asked questions</span>
                     <icon icon="akar-icons:arrow-right" />
                 </router-link>

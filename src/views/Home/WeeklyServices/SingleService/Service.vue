@@ -1,5 +1,5 @@
 <template>
-    <section ref="ref">
+    <section :id="id + 'Section'">
         <details-vue v-bind="{ serviceName, serviceTimes, description }">
             <template #button>
                 <slot name="button"></slot>
@@ -24,7 +24,7 @@ export default {
         ImageVue
     },
     inject: ['mq'],
-    props: ["ref", "serviceName", "serviceTimes", "description"],
+    props: ["id", "serviceName", "serviceTimes", "description"],
 };
 </script>
 

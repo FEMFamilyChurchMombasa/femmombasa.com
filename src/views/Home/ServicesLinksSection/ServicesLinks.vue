@@ -1,31 +1,16 @@
 <template>
     <section class="container">
-        <!-- <h2 class="heading-1">
-            <icon class="text-magenta" icon="bx:bible" />
-            <span>Weekly Services</span>
-        </h2> -->
-
-        <section-title-vue title="Weekly Service" icon="bx:bible"></section-title-vue>
+        <section-title-vue
+            title="Weekly Service"
+            icon="bx:bible"
+        ></section-title-vue>
 
         <div id="service-links">
             <service-link-vue
-                serviceName="Worship Service"
-                serviceTime="Sun 9:30 AM"
-            ></service-link-vue>
-
-            <service-link-vue
-                serviceName="Zoom Prayer Service"
-                serviceTime="Tue 7:45 PM"
-            ></service-link-vue>
-
-            <service-link-vue
-                serviceName="Take-Off Lunch Hour Service"
-                serviceTime="Wed 12:45 PM"
-            ></service-link-vue>
-
-            <service-link-vue
-                serviceName="Open Heavens Prayer Service"
-                serviceTime="Fri 5:30 PM"
+                v-for="service in services"
+                :serviceName="service.serviceName"
+                :serviceTime="`${service.serviceTimes.weekday} ${service.serviceTimes.from}`"
+                @click="goToService(service)"
             ></service-link-vue>
         </div>
     </section>
@@ -35,12 +20,34 @@
 import ServiceLinkVue from "./ServiceLink.vue";
 import { Icon } from "@iconify/vue";
 import SectionTitleVue from "../../../components/ui/SectionTitle.vue";
+import {
+    worshipService,
+    zoomPrayerService,
+    takeOffService,
+    openHeavensService
+} from "../WeeklyServices/servicesData";
 
 export default {
     components: {
         ServiceLinkVue,
         Icon,
         SectionTitleVue
+    },
+    data() {
+        return {
+            services: [
+                worshipService,
+                zoomPrayerService,
+                takeOffService,
+                openHeavensService
+            ]
+        };
+    },
+    methods: {
+        goToService(service){
+            let el = document.getElementById(`${service.ref}Section`)
+            el.scrollIntoView(true)
+        }
     }
 };
 </script>
@@ -48,7 +55,7 @@ export default {
 <style lang="scss" scoped>
 section {
     margin-bottom: 3rem;
-    
+
     h2 {
         display: flex;
         align-items: center;

@@ -40,6 +40,7 @@ html {
     margin: 0;
     padding: 0;
     color: config.color("dark-1");
+    scroll-behavior: smooth;
 
     * {
         font-family: config.$font-family;

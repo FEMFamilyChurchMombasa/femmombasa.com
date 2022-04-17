@@ -1,34 +1,36 @@
 <template>
     <div id="weekly-services" class="container margin-bottom-3">
-        <service-vue v-bind="worshipService">
+        <service-vue :id="worshipService.ref" v-bind="worshipService">
             <template #image>
                 <img
                     class="serviceImage"
                     :id="worshipService.ref"
-                    src="/src/assets/worship_service.webp"
+                    src="../../../assets/dad_preaching.webp"
                     :alt="worshipService.ref + ' image'"
                 />
             </template>
         </service-vue>
 
-        <service-vue v-bind="zoomPrayerService">
+        <service-vue :id="zoomPrayerService.ref" v-bind="zoomPrayerService">
             <template #image>
                 <img
                     class="serviceImage"
                     :id="zoomPrayerService.ref"
-                    src="/src/assets/zoom.webp"
+                    src="../../../assets/worship_service.webp"
                     :alt="worshipService.ref + ' image'"
                 />
             </template>
             <template #button>
-                <button :id="zoomPrayerService.ref" class="btn-blue">
-                    <icon icon="bxl:zoom" height="24" />
-                    <span>Go to Zoom</span>
-                </button>
+                <a target="_blank" href="https://us02web.zoom.us/j/82126364997">
+                    <button :id="zoomPrayerService.ref" class="btn-blue">
+                        <icon icon="bxl:zoom" height="24" />
+                        <span>Go to Zoom</span>
+                    </button>
+                </a>
             </template>
         </service-vue>
 
-        <service-vue v-bind="takeOffService">
+        <service-vue :id="takeOffService.ref" v-bind="takeOffService">
             <template #image>
                 <img
                     class="serviceImage"
@@ -39,7 +41,7 @@
             </template>
         </service-vue>
 
-        <service-vue v-bind="openHeavensService">
+        <service-vue :id="openHeavensService.ref" v-bind="openHeavensService">
             <template #image>
                 <img
                     class="serviceImage"
@@ -85,6 +87,10 @@ img.serviceImage {
     width: 100%;
 
     &#worshipService {
+        object-position: 50%;
+    }
+
+    &#zoomPrayerService {
         object-position: 90%;
     }
 }
