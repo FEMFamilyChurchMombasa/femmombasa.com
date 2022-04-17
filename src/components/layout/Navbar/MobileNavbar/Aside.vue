@@ -4,7 +4,7 @@
             <button @click="$emit('closeMenu')" class="btn-magenta">
                 <icon icon="icon-park-outline:menu-unfold" height="24" />
             </button>
-            <links-vue></links-vue>
+            <links-vue @closeMenu="$emit('closeMenu')"></links-vue>
         </aside>
     </Transition>
 </template>

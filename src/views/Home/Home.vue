@@ -1,9 +1,9 @@
 <template>
     <hero-section-vue></hero-section-vue>
-    <services-links-vue></services-links-vue>
+    <services-links-vue id="servicesSection"></services-links-vue>
     <weekly-services-vue></weekly-services-vue>
     <location-vue></location-vue>
-    <faq-section-vue></faq-section-vue>
+    <faq-section-vue id="faqsSection"></faq-section-vue>
 
 </template>
 
