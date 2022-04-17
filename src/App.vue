@@ -50,4 +50,8 @@ a {
         color: darken(config.color("magenta"), 10%);
     }
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+}
 </style>

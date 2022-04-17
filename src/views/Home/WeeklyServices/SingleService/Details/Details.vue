@@ -40,7 +40,6 @@ div.service-details {
     @include config.breakpoint("lg") {
         padding: 3rem;
         order: 1;
-        gap: 3rem;
     }
 }
 </style>

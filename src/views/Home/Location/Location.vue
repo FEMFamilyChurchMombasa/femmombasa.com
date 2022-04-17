@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <header-vue></header-vue>
+        <section-title-vue title="Location" icon="fa6-solid:location-dot"></section-title-vue>
         <description-vue></description-vue>
         <footer id="map">
             <iframe
@@ -16,14 +16,14 @@
 
 <script>
 import { Icon } from "@iconify/vue";
-import HeaderVue from "./Header.vue";
 import DescriptionVue from "./Description.vue";
+import SectionTitleVue from "../../../components/ui/SectionTitle.vue";
 
 export default {
     components: {
         Icon,
-        HeaderVue,
-        DescriptionVue
+        DescriptionVue,
+        SectionTitleVue
     }
 };
 </script>
