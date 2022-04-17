@@ -1,5 +1,5 @@
 <template>
-    <hero-section-vue></hero-section-vue>
+    <hero-section-vue @openChat="$emit('openChat')"></hero-section-vue>
     <services-links-vue id="servicesSection"></services-links-vue>
     <weekly-services-vue></weekly-services-vue>
     <location-vue></location-vue>

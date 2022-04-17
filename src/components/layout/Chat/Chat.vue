@@ -1,5 +1,5 @@
 <template>
-    <button @click="open = !open" id="chat-button">
+    <button @click="$emit('toggle')" id="chat-button">
         <icon class="icon" icon="fluent:chat-16-filled" />
     </button>
 
@@ -17,11 +17,7 @@ export default {
         Icon,
         ChatWindow
     },
-    data() {
-        return {
-            open: false,
-        }
-    }
+    props: ['open'],
 };
 </script>
 

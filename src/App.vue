@@ -1,10 +1,10 @@
 <template>
     <navbar-vue></navbar-vue>
 
-    <chat-vue></chat-vue>
+    <chat-vue :open="chatOpen" @toggle="chatOpen = !chatOpen"></chat-vue>
 
     <main>
-        <router-view></router-view>
+        <router-view @openChat="chatOpen = !chatOpen"></router-view>
     </main>
 
     <footer-vue></footer-vue>
@@ -23,6 +23,11 @@ export default {
         NavbarVue,
         FooterVue,
         ChatVue
+    },
+    data(){
+        return {
+            chatOpen: false,
+        }
     }
 };
 </script>
