@@ -1,5 +1,5 @@
 <template>
-    <div id="weekly-services" class="container">
+    <div id="weekly-services" class="container margin-bottom-3">
         <service-vue v-bind="worshipService">
             <template #image>
                 <img

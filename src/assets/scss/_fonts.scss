@@ -1,16 +1,16 @@
 @use "./colors";
 @use "./breakpoints";
 @use "sass:map";
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
 $font-family: "Work Sans", sans-serif;
 
 // Display fonts
 $desktop-display-font-sizes: (
-    1: 2.488rem,
-    2: 2.074rem,
-    3: 1.728rem,
-    4: 1.44rem
+    1: 2.074rem,
+    2: 1.728rem,
+    3: 1.44rem,
+    4: 1.2rem
 );
 
 $mobile-display-font-sizes: (
@@ -50,7 +50,6 @@ $mobile-heading-font-sizes: (
         }
     }
 
-
     .display-#{$level} {
         $size: map.get($mobile-display-font-sizes, $level);
         font-size: $size !important;
@@ -71,14 +70,12 @@ $mobile-heading-font-sizes: (
 
 ////////////////////////////////
 
-p {
+p,
+.paragraph {
     margin: 0;
-
-    &,
-    .paragraph {
-        font-size: 1rem;
-        line-height: 1.75rem;
-    }
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .small,
