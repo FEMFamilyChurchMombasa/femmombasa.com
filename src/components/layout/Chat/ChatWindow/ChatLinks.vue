@@ -32,13 +32,13 @@ export default {
                     icon: "bi:messenger",
                     url:"https://m.me/femfamilymombasa"
                 },
-                {
-                    id: "whatsapp",
-                    title: "chat on whatsapp",
-                    icon: "ri:whatsapp-fill",
-                    height: 18,
-                    url:`https://api.whatsapp.com/send/?phone=${ phoneNumber }&text&app_absent=0&lang=en`
-                },
+                // {
+                //     id: "whatsapp",
+                //     title: "chat on whatsapp",
+                //     icon: "ri:whatsapp-fill",
+                //     height: 18,
+                //     url:`https://api.whatsapp.com/send/?phone=${ phoneNumber }&text&app_absent=0&lang=en`
+                // },
                 {
                     id: "call",
                     title: "give us a call",
