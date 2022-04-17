@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <section id="locationSection" class="container">
         <section-title-vue title="Location" icon="fa6-solid:location-dot"></section-title-vue>
         <description-vue></description-vue>
         <!-- <footer id="map">

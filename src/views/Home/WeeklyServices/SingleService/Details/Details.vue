@@ -4,7 +4,7 @@
         <description-vue :description="description"></description-vue>
 
         <slot name="button">
-            <button class="btn-blue">
+            <button @click="goToLocation" class="btn-blue">
                 <span>Find our location</span>
                 <icon icon="fa6-solid:location-dot" />
             </button>
@@ -24,6 +24,12 @@ export default {
         Icon
     },
     props: ["serviceName", "serviceTimes", "description"],
+    methods: {
+        goToLocation(){
+            let el = document.getElementById("locationSection");
+            el.scrollIntoView()
+        }
+    }
 };
 </script>
 

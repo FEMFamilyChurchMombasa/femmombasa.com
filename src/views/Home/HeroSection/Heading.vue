@@ -6,7 +6,7 @@
                 Church is more than a building. It’s a family. Welcome to FEM
                 Family Church Mombasa.
             </p>
-            <button class="btn-magenta">
+            <button @click="$emit('openChat')" class="btn-magenta">
                 <span>Chat with us</span>
                 <icon icon="fluent:chat-16-filled" />
             </button>

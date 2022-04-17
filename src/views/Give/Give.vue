@@ -11,7 +11,7 @@
                     <small>2 Corinthians 9:7 NKJV</small>
                 </div>
 
-                <button class="btn-dark-blue">
+                <button @click="scrollToMpesa" class="btn-dark-blue">
                     How to Give <icon icon="ph:caret-down-bold" />
                 </button>
             </div>
@@ -40,6 +40,12 @@ export default {
         Icon,
         MpesaSectionVue,
         OtherGivingVue
+    },
+    methods: {
+        scrollToMpesa(){
+            let el = document.getElementById('mpesaSection')
+            el.scrollIntoView();
+        }
     }
 };
 </script>

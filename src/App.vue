@@ -1,10 +1,10 @@
 <template>
     <navbar-vue></navbar-vue>
 
-    <chat-vue></chat-vue>
+    <chat-vue :open="chatOpen" @toggle="chatOpen = !chatOpen"></chat-vue>
 
     <main>
-        <router-view></router-view>
+        <router-view @openChat="chatOpen = !chatOpen"></router-view>
     </main>
 
     <footer-vue></footer-vue>
@@ -23,6 +23,11 @@ export default {
         NavbarVue,
         FooterVue,
         ChatVue
+    },
+    data(){
+        return {
+            chatOpen: false,
+        }
     }
 };
 </script>
@@ -35,6 +40,7 @@ html {
     margin: 0;
     padding: 0;
     color: config.color("dark-1");
+    scroll-behavior: smooth;
 
     * {
         font-family: config.$font-family;

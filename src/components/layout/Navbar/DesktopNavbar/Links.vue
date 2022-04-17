@@ -1,9 +1,9 @@
 <template>
     <nav>
-        <router-link class="nav-link body" to="">Give</router-link>
-        <router-link class="nav-link body" to="">Services</router-link>
-        <router-link class="nav-link body" to="">Our Leadership</router-link>
-        <router-link class="nav-link body" to="">FAQs</router-link>
+        <router-link class="nav-link body" to="/give">Give</router-link>
+        <router-link class="nav-link body" :to="{ path:'/', hash: '#servicesSection' }">Services</router-link>
+        <router-link class="nav-link body" to="/our-leadership">Our Leadership</router-link>
+        <router-link class="nav-link body" :to="{ path: '/', hash: '#faqsSection' }">FAQs</router-link>
     </nav>
 </template>
 

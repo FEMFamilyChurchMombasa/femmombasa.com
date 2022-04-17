@@ -1,5 +1,7 @@
 <template>
-    <img src="../../../../assets/fem-msa-logo.svg" alt="logo" />
+    <router-link to="/">
+        <img src="../../../../assets/fem-msa-logo.svg" alt="logo" />
+    </router-link>
 </template>
 
 <script>

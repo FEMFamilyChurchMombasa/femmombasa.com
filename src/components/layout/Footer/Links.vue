@@ -2,16 +2,20 @@
 <section>
     <h2 class="heading-2 margin-bottom-1">Links</h2>
     <nav>
-        <router-link class="navlink" to="">Home</router-link>
-        <router-link class="navlink" to="">Give</router-link>
-        <router-link class="navlink" to="">Our Leadership</router-link>
+        <router-link @click="scrollToTop()" class="navlink" to="/">Home</router-link>
+        <router-link @click="scrollToTop()" class="navlink" to="/give">Give</router-link>
+        <router-link @click="scrollToTop()" class="navlink" to="/our-leadership">Our Leadership</router-link>
     </nav>
 </section>
 </template>
 
 <script>
 export default {
-    
+    methods: {
+        scrollToTop(){
+            window.scrollTo(0, 0)
+        }
+    }
 }
 </script>
 
