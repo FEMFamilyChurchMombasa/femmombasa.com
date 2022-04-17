@@ -1,8 +1,12 @@
 <template>
     <navbar-vue></navbar-vue>
+
+    <chat-vue></chat-vue>
+
     <main>
         <router-view></router-view>
     </main>
+
     <footer-vue></footer-vue>
 
 </template>
@@ -11,12 +15,14 @@
 import { RouterView } from "vue-router";
 import FooterVue from "./components/layout/Footer/Footer.vue";
 import NavbarVue from "./components/layout/Navbar/Navbar.vue";
+import ChatVue from "./components/layout/Chat/Chat.vue";
 
 export default {
     components: {
         RouterView,
         NavbarVue,
         FooterVue,
+        ChatVue
     }
 };
 </script>
