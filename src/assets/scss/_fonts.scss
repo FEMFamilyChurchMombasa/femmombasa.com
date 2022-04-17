@@ -1,0 +1,89 @@
+@use "./colors";
+@use "./breakpoints";
+@use "sass:map";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+$font-family: "Work Sans", sans-serif;
+
+// Display fonts
+$desktop-display-font-sizes: (
+    1: 2.074rem,
+    2: 1.728rem,
+    3: 1.44rem,
+    4: 1.2rem
+);
+
+$mobile-display-font-sizes: (
+    1: 1.802rem,
+    2: 1.602rem,
+    3: 1.424rem,
+    4: 1.266rem
+);
+
+// Headings
+$desktop-heading-font-sizes: (
+    1: 1.728rem,
+    2: 1.44rem,
+    3: 1.2rem,
+    4: 1rem
+);
+
+$mobile-heading-font-sizes: (
+    1: 1.424rem,
+    2: 1.266rem,
+    3: 1.125rem,
+    4: 1rem
+);
+
+@each $level in (1, 2, 3, 4) {
+    .heading-#{$level} {
+        $size: map.get($mobile-heading-font-sizes, $level);
+        font-size: $size !important;
+        font-weight: 700;
+
+        @include breakpoints.breakpoint("sm") {
+            $size: map.get($desktop-heading-font-sizes, $level);
+            font-size: $size !important;
+        }
+        @if $level > 2 {
+            text-transform: uppercase;
+        }
+    }
+
+    .display-#{$level} {
+        $size: map.get($mobile-display-font-sizes, $level);
+        font-size: $size !important;
+        margin: 0;
+
+        @include breakpoints.breakpoint("sm") {
+            $size: map.get($desktop-display-font-sizes, $level);
+            font-size: $size !important;
+        }
+
+        @if $level < 3 {
+            font-weight: 700;
+        } @else if $level == 4 {
+            font-weight: 500;
+        }
+    }
+}
+
+////////////////////////////////
+
+p,
+.paragraph {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.small,
+small {
+    font-size: 0.889rem;
+    line-height: normal;
+
+    @include breakpoints.breakpoint("sm") {
+        font-size: 0.8rem;
+    }
+}

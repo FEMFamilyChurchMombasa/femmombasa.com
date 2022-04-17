@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "description": "Open the M-Pesa menu in the SIM toolkit of your mobile device."
+    },
+    {
+        "id": 2,
+        "description": "Under Business No. enter our paybill number: 728655."
+    },
+    {
+        "id": 3,
+        "description": "Under Account No. enter your Partern’s Number or you full name, along with your reason for giving. (e.g. John Doe - tithe)"
+    },
+    {
+        "id": 4,
+        "description": "Enter the amount you want to give."
+    },
+    {
+        "id": 5,
+        "description": "You should receive a confirmation popup message. The name included in the message should be FEM FAMILY CHURCH MSA. Cancel the transaction if it does not."
+    },
+    {
+        "id": 6,
+        "description": "Once the transaction is confirmed, you should received a confirmation SMS from MPESA. Thank you for your giving!"
+    }
+]

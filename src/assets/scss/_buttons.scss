@@ -1,0 +1,35 @@
+@use "./colors";
+@use "./breakpoints";
+
+@each $color-name, $hex in colors.$colors {
+    .btn-#{$color-name} {
+        border: none;
+        outline: none;
+        padding: 1rem;
+        width: 100%;
+
+        @include breakpoints.breakpoint('sm'){
+            width: fit-content;
+            padding: 1rem 2rem;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: $hex;
+        border-radius: 1rem;
+
+        color: colors.bg-font-color($hex);
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        cursor: pointer;
+        transition: 200ms;
+
+        &:hover {
+            background-color: darken($hex, 5%);
+        }
+    }
+}
