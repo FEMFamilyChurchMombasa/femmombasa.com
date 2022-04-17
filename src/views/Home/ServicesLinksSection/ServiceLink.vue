@@ -2,13 +2,13 @@
     <div class="service-link">
         <div>
             <p>{{ serviceName }}</p>
-            <p v-if="mq.xs" class="heading-3">{{ serviceTime }}</p>
+            <p v-if="mq.xs" class="heading-4">{{ serviceTime }}</p>
             <a>
                 <span>Click to learn more</span>
                 <icon icon="akar-icons:arrow-right" />
             </a>
         </div>
-        <p v-if="mq.smPlus" class="heading-3">{{ serviceTime }}</p>
+        <p v-if="mq.smPlus" class="heading-4">{{ serviceTime }}</p>
     </div>
 </template>
 
@@ -40,12 +40,14 @@ div.service-link {
     transition: 200ms;
 
     p {
-        margin-bottom: 0.5rem;
-        &.heading-3 {
+        @include config.breakpoint("sm") {
+            margin-bottom: 0.5rem;
+        }
+        &.heading-4 {
             margin-bottom: 1rem;
-            color: config.color('dark-2');
+            color: config.color("dark-2");
 
-            @include config.breakpoint('sm'){
+            @include config.breakpoint("sm") {
                 margin-bottom: 0;
             }
         }

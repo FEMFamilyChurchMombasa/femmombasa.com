@@ -1,9 +1,11 @@
 <template>
     <section class="container">
-        <h2 class="heading-1">
+        <!-- <h2 class="heading-1">
             <icon class="text-magenta" icon="bx:bible" />
             <span>Weekly Services</span>
-        </h2>
+        </h2> -->
+
+        <section-title-vue title="Weekly Service" icon="bx:bible"></section-title-vue>
 
         <div id="service-links">
             <service-link-vue
@@ -32,11 +34,13 @@
 <script>
 import ServiceLinkVue from "./ServiceLink.vue";
 import { Icon } from "@iconify/vue";
+import SectionTitleVue from "../../../components/ui/SectionTitle.vue";
 
 export default {
     components: {
         ServiceLinkVue,
-        Icon
+        Icon,
+        SectionTitleVue
     }
 };
 </script>

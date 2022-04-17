@@ -1,8 +1,8 @@
 <template>
     <nav>
-        <router-link class="nav-link body" to="">Chat</router-link>
         <router-link class="nav-link body" to="">Give</router-link>
         <router-link class="nav-link body" to="">Services</router-link>
+        <router-link class="nav-link body" to="">Our Leadership</router-link>
         <router-link class="nav-link body" to="">FAQs</router-link>
     </nav>
 </template>

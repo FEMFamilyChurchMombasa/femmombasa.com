@@ -1,7 +1,7 @@
 <template>
     <header>
-        <h2 class="display-2">{{ serviceName }}</h2>
-        <p class="heading-2">Every {{ weekday }} from {{ from }} to {{ to }}</p>
+        <h2 class="display-3">{{ serviceName }}</h2>
+        <p class="heading-4">Every {{ weekday }} from {{ from }} to {{ to }}</p>
     </header>
 </template>
 
@@ -23,7 +23,7 @@ header {
         margin-bottom: 0.5rem !important;
     }
 
-    p.heading-2 {
+    p.heading-4 {
         color: config.color("magenta");
     }
 }
