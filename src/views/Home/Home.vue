@@ -4,6 +4,7 @@
     <weekly-services-vue></weekly-services-vue>
     <location-vue></location-vue>
     <faq-section-vue id="faqsSection"></faq-section-vue>
+    <social-media-section-vue></social-media-section-vue>
 
 </template>
 
@@ -13,6 +14,7 @@ import ServicesLinksVue from "./ServicesLinksSection/ServicesLinks.vue";
 import WeeklyServicesVue from "./WeeklyServices/WeeklyServices.vue";
 import LocationVue from "./Location/Location.vue";
 import FaqSectionVue from "./FaqSection/FaqSection.vue";
+import SocialMediaSectionVue from "./SocialMediaSection/SocialMediaSection.vue";
 
 export default {
     components: {
@@ -20,7 +22,8 @@ export default {
         ServicesLinksVue,
         WeeklyServicesVue,
         LocationVue,
-        FaqSectionVue
+        FaqSectionVue,
+        SocialMediaSectionVue
     }
 };
 </script>

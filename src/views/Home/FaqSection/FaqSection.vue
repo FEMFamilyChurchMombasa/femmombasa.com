@@ -1,5 +1,5 @@
 <template>
-    <section class="container margin-bottom-3">
+    <section class="container">
         <section-title-vue
             title="Frequently Asked Questions"
             icon="fa-regular:question-circle"
@@ -32,4 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section.container {
+    margin-bottom: 3rem;
+}
 </style>
