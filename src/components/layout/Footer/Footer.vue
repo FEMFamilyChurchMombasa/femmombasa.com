@@ -41,6 +41,11 @@ hr {
 
 footer.container {
     margin-bottom: 1rem;
+    text-align: center;
+
+    @include config.breakpoint('sm'){
+        text-align: left;
+    }
 
     main {
         display: flex;

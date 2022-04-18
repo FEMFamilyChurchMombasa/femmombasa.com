@@ -55,6 +55,7 @@ div#bottom {
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        font-size: 1.2rem;
 
         a {
             color: config.color("dark-3");
