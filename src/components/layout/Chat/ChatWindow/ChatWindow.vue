@@ -24,7 +24,7 @@ aside {
     position: fixed;
     background-color: white;
     box-shadow: 0 0 50px rgba(black, 0.25);
-    z-index: 2;
+    z-index: 3;
     border-radius: 1rem;
     top: 2rem;
     bottom: 7rem;

@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .outer-area {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     bottom: 0;
     right: 0;

@@ -25,7 +25,7 @@ button#chat-button {
     position: fixed;
     bottom: 2rem;
     right: 1rem;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.5);
     border: none;
     outline: none;
