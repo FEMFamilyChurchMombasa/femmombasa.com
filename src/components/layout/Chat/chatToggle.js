@@ -1,10 +1,10 @@
 import { reactive } from "vue";
 
-const chatWindow = reactive({
+const chatToggle = reactive({
     open: false,
     toggle(){
         this.open = !this.open;
     }
 })
 
-export default chatWindow;
+export default chatToggle;

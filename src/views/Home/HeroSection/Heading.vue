@@ -6,7 +6,7 @@
                 Church is more than a building. It’s a family. Welcome to FEM
                 Family Church Mombasa.
             </p>
-            <button @click="chatWindow.toggle()" class="btn-magenta">
+            <button @click="chatToggle.toggle()" class="btn-magenta">
                 <span>Chat with us</span>
                 <icon icon="fluent:chat-16-filled" />
             </button>
@@ -16,7 +16,7 @@
 
 <script>
 import { Icon } from "@iconify/vue";
-import chatWindow from "../../../components/layout/Chat/chatToggle";
+import chatToggle from "../../../components/layout/Chat/chatToggle";
 
 export default {
     components: {
@@ -24,7 +24,7 @@ export default {
     },
     data(){
         return {
-            chatWindow
+            chatToggle
         }
     }
 };
