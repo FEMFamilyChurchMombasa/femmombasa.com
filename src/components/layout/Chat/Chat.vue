@@ -1,8 +1,9 @@
 <template>
     <chat-button-vue v-bind="{ chatToggle }"></chat-button-vue>
     <Transition name="slide">
-        <chat-window v-if="chatToggle.open"></chat-window>
+        <chat-window v-show="chatToggle.open"></chat-window>
     </Transition>
+    <div @click="chatToggle.toggle()" v-if="chatToggle.open" class="outer-area"></div>
 </template>
 
 <script>
@@ -24,6 +25,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.outer-area {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(black, 0.5);
+    transition: 200ms;
+}
 .slide-enter-active, .slide-leave-active {
     transition: 500ms ease;
 }
