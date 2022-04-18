@@ -1,23 +1,28 @@
 <template>
-    <button @click="$emit('toggle')" id="chat-button">
+    <button @click="chatWindow.toggle()" id="chat-button">
         <icon class="icon" icon="fluent:chat-16-filled" />
     </button>
 
     <Transition name="slide">
-        <chat-window v-show="open"></chat-window>
+        <chat-window v-if="chatWindow.open"></chat-window>
     </Transition>
 </template>
 
 <script>
 import { Icon } from "@iconify/vue";
 import ChatWindow from "./ChatWindow/ChatWindow.vue";
+import chatWindow from "./chatToggle";
 
 export default {
     components: {
         Icon,
         ChatWindow
     },
-    props: ['open'],
+    data(){
+        return {
+            chatWindow,
+        }
+    }
 };
 </script>
 

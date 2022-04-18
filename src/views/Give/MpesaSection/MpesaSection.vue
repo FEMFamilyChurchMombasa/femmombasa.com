@@ -13,8 +13,6 @@ import SectionTitleVue from "../../../components/ui/SectionTitle.vue";
 import StepVue from "./Step.vue";
 import stepsData from "./stepsData.json";
 
-console.log(stepsData)
-
 export default {
     components: {
         SectionTitleVue,
