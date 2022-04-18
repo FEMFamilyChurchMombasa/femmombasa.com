@@ -19,14 +19,15 @@ export default {
 
 <style lang="scss" scoped>
 aside {
-    height: calc(100% - 9rem);
+    // height: calc(100% - 9rem);
     max-width: 300px;
     position: fixed;
     background-color: white;
     box-shadow: 0 0 50px rgba(black, 0.25);
-    z-index: 1;
+    z-index: 3;
     border-radius: 1rem;
     top: 2rem;
+    bottom: 7rem;
     right: 1rem;
     overflow-y: auto;
 

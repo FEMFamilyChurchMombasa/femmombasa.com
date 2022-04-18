@@ -1,7 +1,7 @@
 <template>
 
 <section class="container">
-    <heading-vue @openChat="$emit('openChat')">
+    <heading-vue>
         <template #heading>
             <slot name="heading"></slot>
         </template>

@@ -1,6 +1,6 @@
 <template>
     <Transition name="slide">
-        <aside v-if="isOpen">
+        <aside v-if="open">
             <button @click="$emit('closeMenu')" class="btn-magenta">
                 <icon icon="icon-park-outline:menu-unfold" height="24" />
             </button>
@@ -17,7 +17,7 @@ export default {
         Icon,
         LinksVue,
     },
-    props: ["isOpen"]
+    props: ["open"]
 };
 </script>
 
@@ -46,7 +46,7 @@ aside {
     right: 0;
     top: 0;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     padding: 2rem 1.5rem;
     padding-left: 1rem;
     box-shadow: 0 0 30px config.color("dark-1", 0.25);
