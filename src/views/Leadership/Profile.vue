@@ -2,17 +2,6 @@
     <section class="profile">
         <article class="details">
             <slot name="details">
-                <h2 class="display-2 text-dark-3">Rev. Teresa Wairimu</h2>
-                <p>
-                    Reverend Teresa Wairimu is an acclaimed evangelist, speaker,
-                    and author. In 1988, she founded Faith Evangelistic
-                    Ministry, an international Christian organization with
-                    branches in the United States of America, the United
-                    Kingdom, Germany, and other nations. She is also the founder
-                    of Operation Give and Grow, an award-winning charity
-                    organization in Kilifi, Kenya. Evangelist Wairimu is
-                    well-known for her remarkable gift of prophecy.
-                </p>
             </slot>
         </article>
         <div class="image">
