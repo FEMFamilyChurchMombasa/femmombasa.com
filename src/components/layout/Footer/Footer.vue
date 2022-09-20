@@ -63,7 +63,7 @@ footer.container {
 
         @include config.breakpoint('lg'){
             display: grid;
-            grid-template-columns: 80px 1fr auto 1fr;
+            grid-template-columns: 150px 1fr auto 1fr;
         }
     }
 }
