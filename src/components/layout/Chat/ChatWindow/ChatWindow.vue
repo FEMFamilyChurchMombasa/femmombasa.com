@@ -26,7 +26,7 @@ aside {
     box-shadow: 0 0 50px rgba(black, 0.25);
     z-index: 3;
     border-radius: 1rem;
-    top: 2rem;
+    // top: 2rem;
     bottom: 7rem;
     right: 1rem;
     overflow-y: auto;
