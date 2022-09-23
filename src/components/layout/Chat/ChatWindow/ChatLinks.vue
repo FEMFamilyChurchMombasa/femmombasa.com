@@ -10,7 +10,7 @@
 <script>
 import { Icon } from "@iconify/vue";
 
-let phoneNumber = '+254724203419';
+let phoneNumber = '254724203419';
 
 export default {
     components: {
