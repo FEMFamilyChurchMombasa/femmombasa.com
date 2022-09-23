@@ -10,7 +10,7 @@
 <script>
 import { Icon } from "@iconify/vue";
 
-let phoneNumber = '254724203419';
+let phoneNumber = '+254724203419';
 
 export default {
     components: {
@@ -19,33 +19,33 @@ export default {
     data() {
         return {
             links: [
-                {
-                    id: "email",
-                    title: "Send us an email",
-                    icon: "mdi:email-fast",
-                    height: 18,
-                    url:"mailto:mombasa@fem-international.org"
-                },
+                // {
+                //     id: "email",
+                //     title: "Send us an email",
+                //     icon: "mdi:email-fast",
+                //     height: 18,
+                //     url:"mailto:mombasa@fem-international.org"
+                // },
                 {
                     id: "messenger",
-                    title: "Chat on Messenger",
+                    title: "Messenger",
                     icon: "bi:messenger",
                     url:"https://m.me/femfamilymombasa"
                 },
-                // {
-                //     id: "whatsapp",
-                //     title: "chat on whatsapp",
-                //     icon: "ri:whatsapp-fill",
-                //     height: 18,
-                //     url:`https://api.whatsapp.com/send/?phone=${ phoneNumber }&text&app_absent=0&lang=en`
-                // },
                 {
-                    id: "call",
-                    title: "give us a call",
-                    icon: "carbon:phone-filled",
+                    id: "whatsapp",
+                    title: "WhatsApp",
+                    icon: "ri:whatsapp-fill",
                     height: 18,
-                    url:"tel:+254724203419"
-                }
+                    url:`https://api.whatsapp.com/send/?phone=${ phoneNumber }&text&app_absent=0&lang=en`
+                },
+                // {
+                //     id: "call",
+                //     title: "give us a call",
+                //     icon: "carbon:phone-filled",
+                //     height: 18,
+                //     url:"tel:+254724203419"
+                // }
             ]
         };
     }
