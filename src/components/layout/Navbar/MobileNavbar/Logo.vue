@@ -1,6 +1,6 @@
 <template>
     <router-link to="/">
-        <img src="../../../../assets/fem-msa-logo.svg" alt="logo" />
+        <img src="../../../../assets/dove-logo.svg" alt="logo" />
     </router-link>
 </template>
 
